@@ -1,0 +1,54 @@
+三种访问PM2.5的接口   http://malagis.com/recommended-air-quality-data-pm10-pm2-5.html
+
+最新:new 
+饮食:food
+运动:sport
+心理:heart
+两性:sex
+慢病:disease
+养生:health
+育儿:child
+
+PM2.5接口有问题 返回数据有问题 查询北京市的PM数据 {"errorInfo":"获取pm2.5信息失败","success":false}
+Banner接口访问无返回
+节气养生
+
+10-26 05:59:35.438: D/NetUtil$1.onSuccess(L:224)(1406): 
+后台JSON返回：
+{"resultcode":"0","uid":"4e668afd-0674-4593-b5e2-17724b89d6fb",
+"resultlist":[{"resultlist":[{"position":"2","informationid":"4","title":"food","picurl":"url"},
+{"position":"2","informationid":"4","title":"food","picurl":"url"},{"position":"2","informationid":"4","title":"food","picurl":"url"},
+{"position":"2","informationid":"4","title":"food","picurl":"url"}]}],
+"sessionid":"201510261345066729969948","resultmsg":"success","requestid":"201510261400543303072261"}
+
+10-26 05:59:35.438: D/NetUtil$1.onSuccess(L:233)(1406): name..com.taikang.tkdoctor.bean.InfoResponseModel
+10-26 05:59:38.170: D/NetUtil$1.onSuccess(L:224)(1406): 后台JSON返回：
+{"resultcode":"0","uid":"4e668afd-0674-4593-b5e2-17724b89d6fb",
+"resultlist":[{"resultlist":[{"count":0}]}],"sessionid":"201510261345066729969948","resultmsg":"success","requestid":"201510261400572452786067"}
+10-26 05:59:38.170: D/NetUtil$1.onSuccess(L:233)(1406): name..com.taikang.tkdoctor.bean.InfoResponseModel
+
+//节气养生数据
+healthmessage.do
+方法名:healthConsultation
+所传参数
+{
+   "requestid":"",
+   "requestsource":"doctor",
+   "sessionid":"201510301800516348181202",
+   "uid":"",
+   "method":"healthConsultation",
+   "version":"1.0",
+   "requestlist":
+   [
+      {
+      	"type":"0",
+        "name":"寒露",
+        "constitution":"平和"
+      }
+   ]
+}
+
+
+type 为所传类型（0：运动；1：膳食；2：睡眠）
+
+

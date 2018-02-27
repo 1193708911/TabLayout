@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_palou"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Btn_A"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button_red"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="A 经常出现，不敢爬楼"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Btn_B"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rounded_button_green"
+                android:text="B 偶尔出现"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Btn_C"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rounded_button_purple"
+                android:text="C 这种情况很少出现哦"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <include layout="@layout/health_risk_button" />
+    </LinearLayout>
+
+</LinearLayout>

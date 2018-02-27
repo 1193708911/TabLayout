@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item type="id" name="expandable_toggle_button" />
+	<item type="id" name="expandable" />
+	<item type="id" name="buttonA"/>
+	<item type="id" name="buttonB"/>
+	<item type="id" name="checkboxa"/>
+	<item type="id" name="checkboxb"/>
+	<item type="id" name="checkboxc"/>
+	<item type="id" name="checkboxd"/>
+	<item type="id" name="checkboxe"/>
+	<item name="unit_container_id" type="id"></item>
+    <item name="container_top_id" type="id"></item>
+    <item name="text_bottom_id" type="id"></item>
+    <item name="finger_container_id" type="id"></item>
+</resources>

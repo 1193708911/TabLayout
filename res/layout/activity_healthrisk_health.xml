@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ruler="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_height_health_wen"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="0.67" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="身高"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tv_myhealthi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/underline_bg"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#FB613D"
+                    android:textSize="23sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CM"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/health_risk_button" />
+        </LinearLayout>
+
+        <com.taikang.tkdoctor.customview.VerticalRuler
+            android:id="@+id/vertical_ruler"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            ruler:max_unit_count="140"
+            ruler:min_unit_size="3dp"
+            ruler:per_unit_count="10"
+            ruler:ruler_mode="ruler"
+            ruler:unit_bmp_height="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

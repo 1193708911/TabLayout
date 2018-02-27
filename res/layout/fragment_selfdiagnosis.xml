@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/page_title"/>
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="38dp"
+	        android:background="@color/radioGroup" >
+	
+	        <RadioGroup
+	            android:id="@+id/radiogroup"
+	            android:layout_width="match_parent"
+	            android:layout_height="35dp"
+	            android:layout_centerVertical="true"
+	            android:orientation="horizontal" >
+	
+	            <RadioButton
+	                android:id="@+id/radio_on_body_pic"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:button="@null"
+	                android:checked="true"
+	                android:gravity="center"
+	                android:text="人体图"
+	                android:textColor="@color/tab_tv_renti_press"/>
+	
+	            <View
+	                android:layout_width="1dp"
+	                android:layout_height="match_parent"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp"
+	                android:background="#C6C6C6" />
+	
+	            <RadioButton
+	                android:id="@+id/radio_on_zhengzhuang_list"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:button="@null"
+	                android:checked="false"
+	                android:gravity="center"
+	                android:text="症状列表"
+	                android:textColor="@color/tab_tv_renti_unpress" />
+	        </RadioGroup>
+	
+	        <!-- <ImageView
+	            android:id="@+id/iv_indicator"
+	            android:layout_width="wrap_content"
+	            android:layout_height="8dp"
+	            android:layout_below="@id/radiogroup"
+	            android:scaleType="matrix"
+	            android:visibility="visible" /> -->
+	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="3dp" 
+			    android:orientation="horizontal"
+			    android:layout_alignParentBottom="true"
+			    >
+	            <View
+	                android:id="@+id/view_left"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:background="@color/tab_tv_renti_press" />
+	            <View
+	                android:id="@+id/view_right"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1" />
+	        </LinearLayout>
+	    </RelativeLayout>
+	
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/viewpager_self_body_pic"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@color/white" />
+	</LinearLayout>
+
+</LinearLayout>

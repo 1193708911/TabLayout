@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_ques8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+             >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Btn_A"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button_red"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="A 每天加班，早睡是不可能的事"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_small_size" />
+
+            <Button
+                android:id="@+id/Btn_B"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button_green"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="B 偶尔能做到"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_small_size" />
+
+            <Button
+                android:id="@+id/Btn_C"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button_purple"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="C 每天都能做到"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_small_size" />
+        </LinearLayout>
+
+        <include layout="@layout/health_risk_button" />
+    </LinearLayout>
+
+</LinearLayout>

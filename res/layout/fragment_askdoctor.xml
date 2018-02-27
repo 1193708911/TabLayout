@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ECECEC"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <include layout="@layout/page_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="180dp"
+        android:background="@drawable/icon_callbac" >
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="泰康为您提供电话私人医生，解答您在医生保养、疾病预防、个人健康管理等方面的诱惑，给您提供专业化的医生解答。"
+        android:textSize="@dimen/txt_normal_size" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_askdoctor_wenyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="@dimen/txt_small_x_size"
+        android:gravity="center_horizontal"
+        android:text="您尚不能使用该服务，请先激活"
+        android:textColor="#d80029" >
+    </TextView>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#CCCCCC"
+        android:text="一键问医生"
+        android:textSize="@dimen/txt_normal_size"
+        android:textColor="@color/white" >
+    </Button>
+
+</LinearLayout>

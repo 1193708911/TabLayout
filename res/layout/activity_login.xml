@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F8"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ico_user_number" />
+
+            <EditText
+                android:id="@+id/et_login_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:paddingBottom="15dp"
+                android:paddingLeft="50dp"
+                android:textSize="@dimen/txt_normal_size" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ico_locked" />
+
+            <EditText
+                android:id="@+id/et_login_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:paddingBottom="15dp"
+                android:paddingLeft="50dp"
+                android:textSize="@dimen/txt_normal_size" />
+
+            <Button
+                android:id="@+id/btn_login_forgetpsw_getcheckcode"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_button"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="忘记密码"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_small_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp" >
+
+            <CheckBox
+                android:id="@+id/cb_login_redme"
+                style="@style/cb_cheakStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="记住我的登录信息"
+                android:textColor="@color/main"
+                android:textSize="@dimen/txt_normal_size" />
+
+            <TextView
+                android:id="@+id/tv_login_GoRegist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="注册"
+                android:textColor="@color/main"
+                android:textSize="@dimen/txt_normal_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login_getlogin"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="#2778C9"
+            android:text="登录"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

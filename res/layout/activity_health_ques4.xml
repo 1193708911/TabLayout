@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_ques4_health_wen"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="389dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.07" >
+
+            <ImageView
+                android:id="@+id/imageA"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/photo_worka_health_ques4" />
+
+            <ImageView
+                android:id="@+id/imageB"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/photo_workb_health_ques4" />
+
+            <ImageView
+                android:id="@+id/imageC"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/imageB"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/photo_workc_health_ques4" />
+        </RelativeLayout>
+
+        <include layout="@layout/health_risk_button" />
+    </LinearLayout>
+
+</LinearLayout>

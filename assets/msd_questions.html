@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>templete</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Site CSS -->
+<link href="style/disease_main.css?v1" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+ <script src="js/html5shiv.min.js?v=f3008b4099"></script>
+ <script src="js/respond.min.js?v=f3008b4099"></script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/doctor-utils.js"></script>
+</head>
+
+<body>
+<!--START: Wrapper -->
+<div id="wrapper"> 
+ <!--START: content -->
+ <div id="content">
+  <div class="assessment-questionnaire">
+  	<p class="aq-tips">请认真填写以下健康信息(第一题为多选，其余选择题为单选)：</p>
+   <h3 id="question1">1、已患疾病（多选）</h3>
+   <p id="question1_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+   	<li><label><input type="checkbox" name="checkboxGroup0" value="A" ><i class="ico-radio"></i> 高血压</label></li>
+    <li><label><input type="checkbox" name="checkboxGroup0" value="B"><i class="ico-radio"></i> 糖尿病</label></li>
+    <li><label><input type="checkbox" name="checkboxGroup0" value="C"><i class="ico-radio"></i> 冠心病</label></li>
+    <li><label><input type="checkbox" name="checkboxGroup0" value="D"><i class="ico-radio"></i> 脑卒中</label></li>
+    <li><label><input type="checkbox" name="checkboxGroup0" value="E" id="checkboxGroup0_5"><i class="ico-radio"></i> 无</label></li>
+   </ul>
+   <h3 id="question2">2、收缩压（高压）____（mmHg）</h3>
+   <p id="question2_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+    <li><label><input type="radio" name="RadioGroup0" value="100" id="RadioGroup0_0"><i class="ico-radio"></i> &lt;120</label></li>
+    <li><label><input type="radio" name="RadioGroup0" value="125" id="RadioGroup0_1"><i class="ico-radio"></i> 120~129</label></li>
+    <li><label><input type="radio" name="RadioGroup0" value="135" id="RadioGroup0_2"><i class="ico-radio"></i> 130~139</label></li>
+    <li><label><input type="radio" name="RadioGroup0" value="150" id="RadioGroup0_3"><i class="ico-radio"></i> 140~159</label></li>
+    <li><label><input type="radio" name="RadioGroup0" value="170" id="RadioGroup0_4"><i class="ico-radio"></i> 160~179</label></li>
+    <li><label><input type="radio" name="RadioGroup0" value="190" id="RadioGroup0_5"><i class="ico-radio"></i> ≥180</label></li>
+    <li><label><input type="radio" name="RadioGroup0" value="0" id="RadioGroup0_6"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3 id="question3">3、舒张压（低压）____（mmHg）</h3>
+   <p id="question3_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup1" value="70" id="RadioGroup1_0"><i class="ico-radio"></i> &lt;80</label></li>
+       <li><label><input type="radio" name="RadioGroup1" value="85" id="RadioGroup1_1"><i class="ico-radio"></i> 80~89</label></li>
+       <li><label><input type="radio" name="RadioGroup1" value="92" id="RadioGroup1_2"><i class="ico-radio"></i> 90~94</label></li>
+       <li><label><input type="radio" name="RadioGroup1" value="100" id="RadioGroup1_3"><i class="ico-radio"></i> 95~109</label></li>
+       <li><label><input type="radio" name="RadioGroup1" value="120" id="RadioGroup1_4"><i class="ico-radio"></i> ≥110</label></li>
+       <li><label><input type="radio" name="RadioGroup1" value="0" id="RadioGroup1_5"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3 id="question4">4、总胆固醇（mmol/L）____正常值（胆固醇高容易导致动脉硬化或冠心病）</h3>
+   <p id="question4_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup2" value="5" id="RadioGroup2_0"><i class="ico-radio"></i> &lt;5.18</label></li>
+       <li><label><input type="radio" name="RadioGroup2" value="6" id="RadioGroup2_1"><i class="ico-radio"></i> 5.18~6.22</label></li>
+       <li><label><input type="radio" name="RadioGroup2" value="7" id="RadioGroup2_2"><i class="ico-radio"></i> ≥6.22</label></li>
+       <li><label><input type="radio" name="RadioGroup2" value="0" id="RadioGroup2_3"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3 id="question5">5、甘油三酯（mmol/L）____（甘油三酯高容易导致动脉硬化或冠心病）</h3>
+   <p id="question5_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup3" value="1.5" id="RadioGroup3_0"><i class="ico-radio"></i> &lt;1.70</label></li>
+       <li><label><input type="radio" name="RadioGroup3" value="2" id="RadioGroup3_1"><i class="ico-radio"></i> 1.7~2.25</label></li>
+       <li><label><input type="radio" name="RadioGroup3" value="2.5" id="RadioGroup3_2"><i class="ico-radio"></i> ≥2.25</label></li>
+       <li><label><input type="radio" name="RadioGroup3" value="0" id="RadioGroup3_3"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3 id="question6">6、高密度脂蛋白（mmol/L）____ 正常值（高密度脂蛋白具有抗动脉粥样硬化作用）</h3>
+   <p id="question6_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup4" value="1" id="RadioGroup4_0"><i class="ico-radio"></i> ≥0.9</label></li>
+       <li><label><input type="radio" name="RadioGroup4" value="1.1" id="RadioGroup4_1"><i class="ico-radio"></i> ≥1.0</label></li>
+       <li><label><input type="radio" name="RadioGroup4" value="0.85" id="RadioGroup4_2"><i class="ico-radio"></i> &lt;0.9</label></li>
+       <li><label><input type="radio" name="RadioGroup4" value="0.95" id="RadioGroup4_3"><i class="ico-radio"></i> &lt;1.0</label></li>
+       <li><label><input type="radio" name="RadioGroup4" value="0" id="RadioGroup4_4"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3  id="question7">7、低密度脂蛋白（mmol/L）____ 正常值（低密度脂蛋白导致动脉硬化的基本因素）</h3>
+   <p id="question7_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup5" value="3" id="RadioGroup5_0"><i class="ico-radio"></i> &lt;3.37</label></li>
+       <li><label><input type="radio" name="RadioGroup5" value="3.5" id="RadioGroup5_1"><i class="ico-radio"></i> 3.37～4.14</label></li>
+       <li><label><input type="radio" name="RadioGroup5" value="4.2" id="RadioGroup5_2"><i class="ico-radio"></i> ≥4.14</label></li>
+       <li><label><input type="radio" name="RadioGroup5" value="0" id="RadioGroup5_3"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3 id="question8">8、空腹血糖（mmol/L）____ 正常值（空腹血糖反应血糖控制情况）</h3>
+   <p id="question8_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup6" value="5" id="RadioGroup6_0"><i class="ico-radio"></i> 3.9～6.0</label></li>
+       <li><label><input type="radio" name="RadioGroup6" value="6.5" id="RadioGroup6_1"><i class="ico-radio"></i> 6.1～6.9</label></li>
+       <li><label><input type="radio" name="RadioGroup6" value="7.5" id="RadioGroup6_2"><i class="ico-radio"></i> ≥7.0</label></li>
+       <li><label><input type="radio" name="RadioGroup6" value="4.1" id="RadioGroup6_3"><i class="ico-radio"></i> &lt;3.9</label></li>
+       <li><label><input type="radio" name="RadioGroup6" value="0" id="RadioGroup6_4"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <h3 id="question9">9、餐后2小时血糖（mmol/L）____ 正常值（餐后2小时血糖反应血糖控制情况）</h3>
+   <p id="question9_error" style="display:none" class="no-empty">* 此项为必填项</p>
+   <ul class="quextionnaire-lists">
+       <li><label><input type="radio" name="RadioGroup7" value="5" id="RadioGroup7_0"><i class="ico-radio"></i> 4.4～7.7</label></li>
+       <li><label><input type="radio" name="RadioGroup7" value="8" id="RadioGroup7_1"><i class="ico-radio"></i> 7.8～11.1</label></li>
+       <li><label><input type="radio" name="RadioGroup7" value="12" id="RadioGroup7_2"><i class="ico-radio"></i> ≥11.1</label></li>
+       <li><label><input type="radio" name="RadioGroup7" value="4" id="RadioGroup7_3"><i class="ico-radio"></i> &lt;4.4</label></li>
+       <li><label><input type="radio" name="RadioGroup7" value="0" id="RadioGroup7_4"><i class="ico-radio"></i> 未测量</label></li>
+   </ul>
+   <a class="btn btn-primary btn-block" onclick="doEvaluation();">提交测试</a>
+  </div>
+ </div>
+</div>
+<!--END: content --> 
+<!--START: Footer -->
+<div id="footer"> </div>
+<!--END: Footer -->
+</div>
+<!--END: Wrapper -->
+<script>
+$(document).ready(function(){
+    
+    $("[name='checkboxGroup0']").click(function (){
+        if (($(this).attr('id') == "checkboxGroup0_5") && ($(this).attr("checked"))) {
+            $("[name='checkboxGroup0']").removeAttr("checked");
+            $("#checkboxGroup0_5").attr("checked",'true');
+        } else if ($(this).attr("checked")) {
+            $("#checkboxGroup0_5").removeAttr("checked");
+        }
+    })
+})
+
+function validateError(){
+    var checkbox_selcection_list = new Array(4);
+    var index = 0;
+    $('input:checkbox[name="checkboxGroup0"][checked]').each(function(){
+        checkbox_selcection_list[index]=$(this).val();
+        index += 1;
+    })
+    if (index == 0) {
+        document.getElementById('question1').scrollIntoView();
+        $('#question1_error').show();
+        return ['true', '', ''];
+    } else {
+        checkbox_selcection_list.splice(index, 4-index);
+    }
+                                                             
+    var radio_selection_list = new Array(8);
+
+    var val = "";
+    val=$('input:radio[name="RadioGroup0"]:checked').val();
+    if(val==null){
+        document.getElementById('question2').scrollIntoView();
+        $('#question2_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[0] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup1"]:checked').val();
+    if(val==null){
+        document.getElementById('question3').scrollIntoView();
+        $('#question3_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[1] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup2"]:checked').val();
+    if(val==null){
+        document.getElementById('question4').scrollIntoView();
+        $('#question4_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[2] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup3"]:checked').val();
+    if(val==null){
+        document.getElementById('question5').scrollIntoView();
+        $('#question5_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[3] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup4"]:checked').val();
+    if(val==null){
+        document.getElementById('question6').scrollIntoView();
+        $('#question6_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[4] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup5"]:checked').val();
+    if(val==null){
+        document.getElementById('question7').scrollIntoView();
+        $('#question7_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[5] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup6"]:checked').val();
+    if(val==null){
+        document.getElementById('question8').scrollIntoView();
+        $('#question8_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[6] = val;
+    }
+    
+    val=$('input:radio[name="RadioGroup7"]:checked').val();
+    if(val==null){
+        document.getElementById('question9').scrollIntoView();
+        $('#question9_error').show();
+        return ['true','','']
+    }
+    else{
+        radio_selection_list[7] = val;
+    }
+    
+    return ['false',checkbox_selcection_list,radio_selection_list];
+}
+
+function doEvaluation(){
+    $('.no-empty').each(function (){
+        $(this).hide();
+    });
+    var result = validateError();
+    if (result[0] == 'true') {
+        return false;
+    } else {
+        window.jsInterface.invokeMethod(result[1], result[2]);
+    }
+}
+
+function getHomeSuccess(json_data){
+    alert(json_data);
+}
+</script>
+</body>
+</html>

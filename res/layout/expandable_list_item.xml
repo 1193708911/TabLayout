@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tv_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/expandable_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/text"
+            android:text="More"
+            android:textSize="30dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/expandable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#FFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:text="Action A"
+            android:textSize="12dip"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:text="Action B"
+            android:textSize="12dip"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/checkboxa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/answer_selector"
+            android:text="@string/meiyou" />
+
+        <CheckBox
+            android:id="@+id/checkboxb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/answer_selector"
+            android:text="@string/henshao" />
+
+        <CheckBox
+            android:id="@+id/checkboxc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/answer_selector"
+            android:text="@string/youshi" />
+
+        <CheckBox
+            android:id="@+id/checkboxd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/answer_selector"
+            android:text="@string/jingchang" />
+        <CheckBox
+            android:id="@+id/checkboxe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/answer_selector"
+            android:text="@string/zongshi" />
+    </LinearLayout>
+
+</LinearLayout>

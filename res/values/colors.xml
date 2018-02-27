@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色调 -->
+    <color name="main">#2778C9</color>
+    <color name="centergray">#7FBCFF</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!-- Tab文字 -->
+    <color name="tab_tv_press">#2778C9</color>
+    <color name="tab_tv_unpress">#F2F2F2</color>
+    <color name="color_63">#636363</color>
+    <color name="color_dd">#0185dd</color>
+    <color name="bottomtxt">#abafb5</color>
+    <color name="sky_blue">#1785C2</color>
+    <color name="weight_blue">#50BAD0</color>
+    <color name="weight_green">#76C044</color>
+    <color name="weight_yellow">#FFB82E</color>
+    <color name="weight_red">#F84F58</color>
+    <color name="gray_44">#444444</color>
+    <color name="gray_78">#787878</color>
+    <color name="gray_56">#565656</color>
+    <color name="gray_d1">#d1d1d1</color>
+    <color name="gray_8a">#8a8a8a</color>
+    <color name="green_8d">#8db306</color>
+    <!-- 自定义滑动删除 -->
+    <color name="dimgray">#696969</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 暗灰色 -->
+    <color name="mediumaquamarine">#66CDAA</color>
+    <!-- 天蓝色 -->
+    <color name="gray">#808080</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="dividercolor">#F2F2F2</color>
+    <color name="tab_tv_renti_press">#2778C9</color>
+    <color name="tab_tv_renti_unpress">#858585</color>
+    <color name="radioGroup">#F2F2F2</color>
+    <!-- 自诊部分 -->
+    <color name="zizhen_text">#94989A</color>
+    <color name="segment_choose">#FE6030</color>
+    <color name="segment_border">#FE6030</color>
+    <color name="zizhen_xiugai_text">#4396FF</color>
+    <!-- PM25 -->
+    <color name="pm_light_green">#34B781</color>
+    <color name="pm_light_blue">#5BB3D7</color>
+
+</resources>

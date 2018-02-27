@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taikang.tkdoctor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".base.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- meta-data需要写在application中 -->
+        <!-- 78:D7:DE:0D:F5:21:96:52:E9:5B:4B:8C:07:08:7C:E0:C1:21:D5:93;com.taikang.tkdoctor -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="jTUSSix6HvZ4zs57ggYptrE4" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5604f1fce0f55a87ca002143" >
+        </meta-data>
+        <!-- 欢迎页面 -->
+        <activity
+            android:name=".activity.main.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name=".activity.main.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录 -->
+        <activity
+            android:name=".activity.main.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 注册 -->
+        <activity
+            android:name=".activity.main.RegistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".activity.main.ForgetPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的中心 -->
+        <activity
+            android:name=".activity.mycenter.MyCenterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 产品激活 -->
+        <activity
+            android:name=".activity.mycenter.ProductActiveActivity"
+            android:screenOrientation="portrait" />
+        <!-- 健康计划 -->
+        <activity
+            android:name=".activity.mycenter.HealthPlansActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".activity.mycenter.MyCollectionsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的测试 -->
+        <activity
+            android:name=".activity.mycenter.MyTestsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的服务 -->
+        <activity
+            android:name=".activity.mycenter.MyServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mycenter.AddPlanActivity"
+            android:label="@string/title_activity_add_plan" >
+        </activity>
+        <!-- 资讯信息 -->
+        <activity
+            android:name=".activity.information.ClassInfoDetailAct"
+            android:screenOrientation="portrait" />
+        <!-- 健康计划提醒设置页面 -->
+        <activity
+            android:name=".activity.mycenter.HealthRemindActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_health_remind" >
+        </activity>
+        <!-- 节气养生 -->
+        <activity
+            android:name=".activity.main.SeasonThreapyActivityNew"
+            android:screenOrientation="portrait" />
+        <!-- 中医体质测评 -->
+        <activity
+            android:name=".activity.mycenter.TcmPhysiqueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mycenter.AddNewRemindActivity"
+            android:label="@string/title_activity_add_new_remind" >
+        </activity>
+        <!-- 自诊修改性别年龄 -->
+        <activity
+            android:name=".activity.selfdiagnosis.ModifyAgeSex"
+            android:screenOrientation="portrait" />
+        <!-- 城市选择 -->
+        <activity
+            android:name=".activity.main.ChooseCitysActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.main.WenJuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.mycenter.CenterInfoActivity"
+            android:label="@string/title_activity_center_info" >
+        </activity>
+        <activity
+            android:name=".activity.mycenter.MyCollectionInfoActivity"
+            android:label="@string/title_activity_my_collection_info" >
+        </activity>
+        <!-- 慢病 -->
+        <activity
+            android:name=".activity.main.ChrDiseaseRiskActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 健康 -->
+        <activity
+            android:name=".activity.main.HealthRiskActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 糖尿病风险评估 -->
+        <activity
+            android:name=".activity.main.PingCheTangniaoResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 缺血性心血管疾病风险评估 -->
+        <activity
+            android:name=".activity.main.PingCheQuexueResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 高血压风险评估 -->
+        <activity
+            android:name=".activity.main.PingCheGaoxueyaResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 代谢综合征风险评估 -->
+        <activity
+            android:name=".activity.main.PingCheDaixieResultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.mycenter.UpdatePassActivity"
+            android:label="@string/title_activity_update_pass" >
+        </activity>
+        <activity
+            android:name=".activity.main.ChooseCitysActivity2"
+            android:label="@string/title_activity_health_risk_ques_itenty" >
+        </activity>
+        <activity
+            android:name=".activity.mycenter.TcmPhysiqueResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.main.ChrDiseaseInfoActivity"
+            android:label="@string/title_activity_health_risk_ques_itenty" >
+        </activity>
+        <activity
+            android:name=".activity.selfdiagnosis.SelfDiagnosisActivity"
+            android:label="@string/title_activity_health_risk_ques_itenty" >
+        </activity>
+        <activity
+            android:name=".activity.mycenter.Test"
+            android:label="@string/title_activity_mycenter_test" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 自诊问题结果 -->
+        <activity
+            android:name=".activity.selfdiagnosis.SelfDiagnosis"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".service.AlarmService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service android:name="com.taikang.tkdoctor.alarmclock.AlarmService" />
+
+        <receiver android:name="com.taikang.tkdoctor.alarmclock.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ALARM_RECEIVER" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.AlarmClockReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.yvan.alarmclock.service.action.RESTART_SERVICE" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.mycenter.TcmPhisiqueManBingActivity"
+            android:label="@string/title_activity_tcm_phisique_man_bing" >
+        </activity>
+        <activity
+            android:name=".activity.main.HomeWebInfoActivity"
+            android:label="@string/title_activity_home_web_info" >
+        </activity>
+        <activity
+            android:name=".activity.main.RegistRegularActivity"
+            android:label="@string/title_activity_regist_regular" >
+        </activity>
+    </application>
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+</manifest>

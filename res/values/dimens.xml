@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- by add lipengwei  字体大小 -->
+    <dimen name="txt_large_size">20sp</dimen>
+    <dimen name="txt_normal_size">16sp</dimen>
+    <dimen name="txt_small_size">14sp</dimen>
+    <dimen name="txt_small_x_size">12sp</dimen>
+    <dimen name="item_height">44dp</dimen>
+
+</resources>

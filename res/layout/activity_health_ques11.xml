@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ques11"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Btn_A"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button_red"
+            android:gravity="fill_vertical"
+            android:paddingLeft="20dp"
+            android:text="A 几乎不吃"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Btn_B"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button_green"
+            android:gravity="fill_vertical"
+            android:paddingLeft="20dp"
+            android:text="B 吃，但吃不到一斤"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Btn_C"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button_purple"
+            android:gravity="fill_vertical"
+            android:paddingLeft="20dp"
+            android:text="C 怎么也得一斤以上"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <include layout="@layout/health_risk_button" />
+
+</LinearLayout>

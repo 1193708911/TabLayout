@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_fish"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Btn_A"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button_red"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="A 从不吃"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Btn_B"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button_green"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="B 没海鲜不行、天天吃"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Btn_C"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button_purple"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="C 一周1-2次"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <include layout="@layout/health_risk_button" />
+    </LinearLayout>
+
+</LinearLayout>

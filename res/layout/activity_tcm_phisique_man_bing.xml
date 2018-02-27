@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.taikang.tkdoctor.TcmPhisiqueManBingActivity" >
+
+    <include layout="@layout/page_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_QueXue"
+        style="@style/mycenterjihuostype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txtQueXue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="缺血性心血管疾病风险评估报告" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_TangNiao"
+        style="@style/mycenterjihuostype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFF"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txtTangNiao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="糖尿病风险评估报告" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_GaoXueYa"
+        style="@style/mycenterjihuostype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFF"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txtGaoXueYa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="高血压风险评估报告" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_DaiXie"
+        style="@style/mycenterjihuostype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFF"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txtDaiXie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="代谢综合症风险评估报告" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/go_to" />
+    </RelativeLayout>
+
+</LinearLayout>

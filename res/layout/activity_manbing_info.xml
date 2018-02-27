@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <RelativeLayout
+        style="@style/myCenterZhuStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/sex"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="性别"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtmail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/segment_left_enter"
+                android:editable="false"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_normal_size" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtfemail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/segment_right_normal"
+                android:gravity="center"
+                android:text="女"
+                android:textColor="@color/main"
+                android:textSize="@dimen/txt_normal_size" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_birth"
+        style="@style/myCenterZhuStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/birthday"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="生日"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/etbirthday"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:drawableRight="@drawable/go_to"
+            android:hint="请输入出生日期"
+            android:singleLine="true"
+            android:editable="false"
+            android:text="1989年06月23"
+            android:textSize="@dimen/txt_normal_size" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/myCenterZhuStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <TextView
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="身高"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/etheight"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv1"
+            android:background="@null"
+            android:hint="身高"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:text="cm"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/myCenterZhuStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fff" >
+
+        <TextView
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="体重"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/etweight"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="体重"
+            android:layout_toLeftOf="@+id/tv2"
+            android:inputType="number"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </EditText>
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:text="kg"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_info_waist"
+        style="@style/myCenterZhuStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="腰围"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/etwaist"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="腰围cm"
+            android:layout_toLeftOf="@+id/tv3"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </EditText>
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:text="cm"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_info_hip"
+        style="@style/myCenterZhuStype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="臀围"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ethip"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/tv4"
+            android:hint="臀围cm"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </EditText>
+         <TextView
+            android:id="@+id/tv4"
+            style="@style/myHealthPlanStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:text="cm"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_normal_size" >
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:text="下一步" >
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hp_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="提醒时间" >
+        </TextView>
+    </LinearLayout>
+
+    <include layout="@layout/wheel_date_picker"
+         >
+    </include>
+
+
+    <RelativeLayout
+        android:id="@+id/hp_rlrepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FEFEFE"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvrepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="重复频率" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/hp_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/tvrepeat"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/go_to"
+            android:gravity="center_vertical"
+            android:text="每天"
+            android:textColor="#E8E8E8" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/myHealthPlanRemindStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FEFEFE"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="启用提醒" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/hpRemind"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/hpcheck_selector"
+            android:button="@null"
+            android:gravity="center_vertical" >
+        </CheckBox>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/hpfinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/main"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#fff" >
+    </Button>
+
+</LinearLayout>

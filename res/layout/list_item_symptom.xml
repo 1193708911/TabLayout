@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_item_zhengzhang"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="15sp"
+        android:textColor="#979797"
+        android:gravity="center_vertical|left"
+        android:text="测试" 
+        />
+
+</LinearLayout>

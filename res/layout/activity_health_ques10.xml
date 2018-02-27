@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_ques10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Btn_A"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button_red"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="A 怎么也得喝一、二两"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_normal_size" />
+
+            <Button
+                android:id="@+id/Btn_B"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button_green"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="B 少喝点意思一下"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_normal_size" />
+
+            <Button
+                android:id="@+id/Btn_C"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button_purple"
+                android:gravity="fill_vertical"
+                android:paddingLeft="20dp"
+                android:text="C 一口也不喝"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_normal_size" />
+        </LinearLayout>
+
+        <include layout="@layout/health_risk_button" />
+    </LinearLayout>
+
+</LinearLayout>

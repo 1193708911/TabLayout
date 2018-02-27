@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- 顶部 -->
+
+        <ImageView
+            android:id="@+id/top_short_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/top_line"
+            android:visibility="visible" />
+        <!-- 中部 -->
+
+        <ImageView
+            android:id="@+id/mid_short_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_middle"
+            android:visibility="gone" />
+        <!-- 底部 -->
+
+        <ImageView
+            android:id="@+id/bottom_short_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/bottom_line"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/imgfinish"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="@string/havedrink"
+                android:textColor="#787878"
+                android:textSize="@dimen/txt_small_size" />
+
+            <ImageView
+                android:id="@+id/imgfinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/bac_finish"
+                android:visibility="gone" >
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/havedrink"
+            android:textColor="#787878"
+            android:textSize="@dimen/txt_small_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

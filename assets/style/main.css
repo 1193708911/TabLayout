@@ -1,0 +1,66 @@
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { font-family: "Microsoft YaHei", "STXihei", Helvetica, Arial, sans-serif; color: #636363; font-size:14px; }
+p { margin-top: 0; }
+/*base*/
+.btn { -moz-user-select: none; background-image: none; border: 1px solid rgba(0, 0, 0, 0); cursor: pointer; display: inline-block; font-size: 14px; font-weight: 400; line-height: 1.42857; margin-bottom: 0; padding: 10px 12px; text-align: center; vertical-align: middle; white-space: nowrap; text-decoration: none; }
+.btn-primary { background-color: #2878c8; border-color: #2878c8; color: #ffffff; }
+.btn-block { display: block; }
+/**/
+#content { padding: 15px 5%; }
+.article-detail img { max-width: 100%; display: block; margin: 0 auto; border: 5px solid #dbdbdb; }
+.article-detail h1 { font-size: 1.4em; color: #0185dd; font-weight: normal; margin: 0; margin-bottom: 10px; }
+.article-detail .subtitle {color: #989797; padding-bottom:10px; }
+/**/
+.triangle-obtuse { font-size: 12px; font-style: italic; position: relative; padding: 8px; margin: 1em 0 3em; color: #fff; width: 50px; background: #34b781; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 260px / 125px; position: absolute; }
+.triangle-obtuse.left:before { content: ""; position: absolute; bottom: -11px; left: 24px; border: 0; border-right-width: 20px; border-bottom-width: 17px; border-style: solid; border-color: transparent #34b781; display: block; width: 0; }
+.triangle-obtuse.left:after { content: ""; position: absolute; bottom: -19px; left: 38px; border: 0; border-right-width: 10px; border-bottom-width: 20px; border-style: solid; border-color: transparent #fff; display: block; width: 0; }
+.triangle-obtuse.left { transform: rotate(-6deg); left: 50%; }
+.triangle-obtuse.right { transform: rotate(6deg); right: 50%; }
+.triangle-obtuse.right::before { border-color: transparent #34b781; border-style: solid; border-width: 0 0 15px 15px; bottom: -12px; content: ""; display: block; left: 28px; position: absolute; width: 0; }
+.triangle-obtuse.right::after { border-color: #ffffff; border-style: solid; border-width: 0 0 14px 10px; bottom: -14px; content: ""; display: block; left: 21px; position: absolute; width: 0; }
+.health-report-cloud { position: relative; height: 250px; background-position: center bottom; background-repeat: no-repeat; }
+.health-report-cloud .fore1 { margin-left: -100px; top: 0; }
+.health-report-cloud .fore2 { background: #5bb3d7; margin-left: -140px; top: 50px; }
+.health-report-cloud .fore2:before { border-color: transparent #5bb3d7; }
+.health-report-cloud .fore3 { background: #66ccce; margin-left: -120px; top: 100px; }
+.health-report-cloud .fore3:before { border-color: transparent #66ccce; }
+.health-report-cloud .fore4 { background: #78c8ff; margin-left: -140px; top: 150px; }
+.health-report-cloud .fore4:before { border-color: transparent #78c8ff; }
+.health-report-cloud .fore5 { background: #7bc755; margin-left: -100px; top: 200px; }
+.health-report-cloud .fore5:before { border-color: transparent #7bc755; }
+.health-report-cloud .fore6 { background: #e7507d; margin-right: -100px; top: 0px; }
+.health-report-cloud .fore6:before { border-color: transparent #e7507d; }
+.health-report-cloud .fore7 { background: #f36e5f; margin-right: -140px; top: 50px; }
+.health-report-cloud .fore7:before { border-color: transparent #f36e5f; }
+.health-report-cloud .fore8 { background: #f3cb00; margin-right: -120px; top: 100px; }
+.health-report-cloud .fore8:before { border-color: transparent #f3cb00; }
+.health-report-cloud .fore9 { background: #fea000; margin-right: -140px; top: 150px; }
+.health-report-cloud .fore9:before { border-color: transparent #fea000; }
+.health-report-cloud .fore10 { background: #fe6030; margin-right: -100px; top: 200px; }
+.health-report-cloud .fore10:before { border-color: transparent #fe6030; }
+.health-report-summary { border: 1px solid #4395ff; padding: 10px; position: relative; color: #4395ff; margin-top: 50px; }
+.health-report-summary .branch { border-radius: 100px; background: #4395ff; width: 70px; height: 70px; line-height: 70px; text-align: center; color: white; font-size: 20px; position: absolute; right: 5px; top: -35px; }
+.health-report-summary dt { font-size: 1.4em; padding-bottom: 0.3em; }
+.health-report-summary dd { margin: 0; margin: 0; }
+.heading-1 { font-size: 16px; color: #4395ff; font-weight: normal; padding: 1em 0; border-bottom: 1px solid #f0f0f0; }
+.heading-1:before { content: '●'; margin-right: 5px; }
+.list-bordered-1 { list-style: none; margin: 0; padding: 0; }
+.list-bordered-1 li { border-bottom: 1px double #f0f0f0; padding: 1em 0; }
+.list-bordered-1 li:before { content: '▓'; margin-right: 5px; color: #4395ff; }
+.list-star { list-style: none; margin: 0; padding: 0; padding-left: 20px; position: relative; }
+.list-star li:before { content: '★'; position: absolute; left: 0; color: #4395ff; }
+.health-report-function ul { margin: 0; padding: 1.4em 0; overflow: hidden; }
+.health-report-function li { list-style: none; float: left; width: 50%; text-align: center; }
+.health-report-function li a { display: inline-block; border-radius: 100px; text-decoration: none; width: 90px; height: 90px; text-align: center; color: white; box-sizing: border-box; }
+.health-report-function li:first-child a { background-color: #66ccce; font-size: 20px; padding-top: 17px; }
+.health-report-function li:last-child a { background: #78c8ff; font-size:16px; padding-top: 10px; }
+/**/
+.assessment-questionnaire{}
+.aq-tips{ font-size:16px; font-weight:bold;}
+.assessment-questionnaire h3{ font-size:16px; margin-bottom:0.5em;}
+.quextionnaire-lists{padding:0; margin:0; margin-bottom:1.5em; list-style:none; line-height:24px; border-bottom:1px solid #d9d9d9;}
+.quextionnaire-lists li{ padding:0.5em 0;border-bottom:1px dotted #d9d9d9;}
+.quextionnaire-lists li:last-child{ border-bottom:0;}
+.quextionnaire-lists input{ display:none;}
+.assessment-questionnaire input:checked + .ico-radio{ border:1px solid #1c7efb; background:#1c7efb url(../images/checked.png) center center no-repeat;}
+.assessment-questionnaire .ico-radio{ width:24px; height:24px; border-radius:50px; display:inline-block; border:1px solid #dbdbdf;vertical-align: middle;}
